@@ -13,6 +13,8 @@ const CheckRelation = () => {
     if (person1 && person2) {
       c.onSearch(person1, person2);
     }
+    setPerson1("");
+    setPerson2("");
   };
   return (
     <Container className={styles.container}>
@@ -25,6 +27,7 @@ const CheckRelation = () => {
           variant="outlined"
           color="success"
           fullWidth
+          value={person1}
           style={{ marginTop: "1em",
             marginBottom: "1em" }}
         />
@@ -35,6 +38,7 @@ const CheckRelation = () => {
           variant="outlined"
           color="success"
           fullWidth
+          value={person2}
           style={{ marginTop: "1em",
             marginBottom: "1em" }}
         />

@@ -13,6 +13,7 @@ const Add = () => {
     if (person) {
       c.newUser(person);
     }
+    setPerson("");
   };
   return (
     <Container className={styles.container}>
@@ -26,6 +27,7 @@ const Add = () => {
           variant="outlined"
           color="success"
           fullWidth
+          value = {person}
           style={{ marginTop: "1em", marginBottom: "1em" }}
         />
         <Button
